@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./calculoValorProducto.js"></script>
+    <title>Pagina PC ELECTRONICS</title>
+</head>
+<body >
+    <header id="Titulo">
+        <div class="container-fluid"> 
+
+            <div class="row row-cols-1 justify-content-evenly">
+                 <div class="col">
+                    <img class="logo" src="./imagenes/logo.jpg" alt="imagen logo" >
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark " id="nav" >
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="row row col-12">
+
+                <div class="collapse navbar-nav navbar-collapse " id="navbarNavDropdown">
+                    <div class=" col-lg-1   nav-item" id="navbarDropdownMenuLink"><a class="nav-link active"
+                        aria-current="page" href="index.html">Inicio</a>
+                    </div>
+                    <div class="col-lg-2 offset-1  nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Administrador
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href=""></a></li>
+                            <li><a class="dropdown-item" href=""></a></li>
+                            <li><a class="dropdown-item" href=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 offset-1  nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Inventario
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./CrearProducto.html">Crear producto</a></li>
+                            <li><a class="dropdown-item" href="./ActualProducto.html">Actualizar producto</a></li>
+                            <li><a class="dropdown-item" href="./EliminarProducto.html">Eliminar producto</a></li>
+                            <li><a class="dropdown-item" href="./ConsultarProducto.html">Consultar producto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 offset-1  nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Utilidades
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./ValorProducto.html">Valor producto y venta</a></li>
+                            <li><a class="dropdown-item" href="./Equivalencias.html">Equivalencia tamaño de datos</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-lg-1 offset-1  nav-item" id="navbarDropdownMenuLink"><a class="nav-link active"
+                        aria-current="page" href="./autor.html">Autor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="section" >
+        <form action="" id="formEquivalencia1" >
+            <div class="container" id="main">
+                <div class="row row-4 mb-3" >
+                    <div class=" col-lg-6" id="formEquivalencia">
+                        <div class="card">
+                            <div class="card-header">
+                              <h5>UTILIDADES</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3 align-items-center mb-3">
+                                    <div class="col-7">
+                                        <label for="inputValorCompra" class="col-form-label">Valor de la compra</label>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" style="text-align: right;" id="inputValorCompra" class="form-control" placeholder="Ingresa valor compra"
+                                         onkeypress="return validacion(event);">
+                                    </div>
+                                  
+                                </div>
+                                <div class="row g-3 align-items-center mb-3">
+                                    <div class="col-7">
+                                        <label for="inpututilidad" class="col-form-label">Porcentaje utilidad &nbsp;% </label>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" style="text-align: right;"  id="inpututilidad" class="form-control" placeholder="Ingresa % utilidad" 
+                                        onkeypress="return validacion(event);" >
+                                    </div>
+                                  
+                                </div>
+                                <div class="row g-3 align-items-center mb-3">
+                                    <div class="col-7">
+                                        <label for="inputiva" class="col-form-label">Porcentaje IVA &nbsp;%</label>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" style="text-align: right;"  id="inputiva" class="form-control" placeholder="Ingresa % IVA" onkeypress="return validacion(event);" >
+                                    </div>
+                                  
+                                </div>
+                                <div class="row g-3 align-items-center mb-3">
+                                    <div class="col-5 offset-1">
+                                        <button class="btn btn-primary" type="button" onclick="valorVenta()">Calcular</button>
+                                    </div>
+                                    <div class="col-5">
+                                        <button  class="btn btn-primary" type="reset" value="Resetear" >Limpiar</button>
+                                    </div>
+                                  
+                                </div>
+                              
+                                
+                               
+                                <div class="row g-3 align-items-center mb-3">
+                                    <div class=" col-7  ">
+                                        <label for="resultadoVenta" class="col-form-label" style="text-align: left;">Valor de la venta:</output></label>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" style="text-align: right;" class="form-control" disabled id="resultadoVenta">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="row g-3 align-items-center mb-3">
+
+                                    <div class=" col-7  ">
+                                        <label for="resultadoGanancia" class="col-form-label" style="text-align: left;">Ganancia: </label>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" style="text-align: right;" class="form-control" disabled id="resultadoGanancia">
+                                        
+                                    </div>
+                                    
+                                    
+                                </div>
+        
+                                    
+                            </div>
+                          </div>
+                    </div>
+                   
+                </div>
+               
+            </div>
+        </form>
+    
+
+    </section>
+     
+</body>
+</html>
+    
+    
+   
+        
+    
+
+
+    
+    

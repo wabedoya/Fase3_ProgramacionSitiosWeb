@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to right top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+    
+}
+#Titulo{
+    text-align: center;/*alineacion del titulo en el centro */
+   
+}
+.logo{    
+    filter: brightness(1.1);/*quita el brillo de la imagen*/
+    mix-blend-mode: multiply;/*retira el fondo blanco de la imagen haciendo que el logo se mezcle con el fondo que esta detras de el*/
+    max-width: 350px;
+    height: 150px;
+    margin: auto;
+    display: block;
+    
+}
+h2{
+    margin-block: 20px;
+    text-align: center; /*alineacion del titulo en el centro */
+     
+  }
+h5{
+    margin-block: 5px;
+    text-align: center; /*alineacion del titulo en el centro */
+     
+  }
+#nav {
+    background-color:gray;
+    text-align: center;
+    margin-block-start: 40px;
+    margin-block-end: 40px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+#main{
+    background-color: white;
+    text-align: center;
+   
+}
+#formEquivalencia{
+    width: 400px;
+    display: block;
+    margin: auto;
+    max-width: 400px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+       
+}
+#formEquivalencia1{
+    
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+}
+div p{
+    color:#337DFF
+}
+#formEquivalencia3{
+    
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+
+}
+::placeholder{
+    color: gray;
+    font-size: 11px;
+    text-align: left;
+}
+
+
+
+
+ #iframe{
+    
+    min-width: 350px;
+    min-height: 520px;
+    
+ }
+ #img-{
+    display: block;
+    margin: auto;
+    max-width: 400px;
+    max-height: 520px;
+    min-height: 520px;
+    margin-block-end: 10px;
+    border: solid black;
+
+ }
+ .card-img-top{
+     border-radius: 60%;
+     padding: 20px;
+ }
+ 
+
+ /*En esta media query cuando el tamaño de la pantalla este entre  575 pixeles y 200 pixeles mi
+ pagina se adaptara a cierta propiedades que impondre*/
+ @media screen and (min-width:200px) and (max-width:575px){
+    body{
+        font-size: 12px;
+       
+    }
+    
+   
+    #aside{
+        margin-block-start: 20px;
+       
+    }
+    
+    #nav{
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+        margin-inline-start: 5px;
+        margin-inline-end: 5px;
+     
+   }
+   #section{
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+  
+   }
+  
+    
+    
+}
+
+   
+
+
+    
+/*En esta media query cuando el tamaño de la pantalla este entre  992 pixeles y 576 pixeles mi
+ pagina se adaptara a cierta propiedades que impondre*/
+@media  screen and (min-width:576px) and (max-width:992px){
+    body{
+        font-size:12px;
+    }
+    
+    #aside{
+        margin-block-start: 10px;
+      
+    }
+    
+   
+    
+    
+    
+    #section{
+        margin-inline-start: 20px;
+        margin-inline-end: 20px;
+      
+    }
+    
+    #nav{
+       
+        margin-inline-start: 20px;
+        margin-inline-end: 20px;
+         
+   }
+   
+    
+    
+    
+}
+
+
+ @media  screen and (min-width:993px) and (max-width:1400px){
+   
+   
+        
+    #section{
+        margin-inline-start: 20px;
+        margin-inline-end: 20px;
+        
+
+      
+    }
+    #aside{
+        margin-block-start: 20px;
+       
+    }
+    
+    
+    #nav{
+        margin-block-start: 20px;
+        margin-block-end: 20px;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+        
+   }
+   
+}
+
+  
+    
+    
+    
+
+  
+
